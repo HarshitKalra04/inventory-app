@@ -144,8 +144,41 @@ input:focus, select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px 
 .tag { display: inline-block; background: #ede9fe; color: var(--primary); border-radius: 4px; padding: 2px 7px; font-size: 12px; font-weight: 500; }
 
 @media (max-width: 768px) {
-  .sidebar { width: 60px; }
-  .sidebar-logo span { display: none; }
-  .sidebar nav a span { display: none; }
-  .main { margin-left: 60px; padding: 16px; }
+  .sidebar { 
+    width: 100%; 
+    height: 56px; 
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    z-index: 100;
+  }
+  .sidebar-logo { display: none; }
+  .sidebar nav { 
+    display: flex; 
+    flex-direction: row; 
+    width: 100%;
+    margin: 0;
+  }
+  .sidebar nav a { 
+    flex: 1; 
+    flex-direction: column; 
+    padding: 6px 4px;
+    font-size: 10px;
+    gap: 2px;
+    justify-content: center;
+    text-align: center;
+  }
+  .main { 
+    margin-left: 0; 
+    padding: 16px;
+    padding-bottom: 72px;
+  }
+  .stat-grid { grid-template-columns: 1fr 1fr; }
 }
