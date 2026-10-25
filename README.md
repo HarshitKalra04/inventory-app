@@ -30,7 +30,7 @@ A full-stack Inventory & Order Management System built with **FastAPI**, **React
 ### 1. Clone and configure
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/HarshitKalra04/inventory-app.git
 cd inventory-app
 cp .env.example .env
 # Edit .env if you want different DB credentials
